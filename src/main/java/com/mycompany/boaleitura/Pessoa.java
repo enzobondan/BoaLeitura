@@ -9,10 +9,10 @@ package com.mycompany.boaleitura;
  * @author asafe
  */
 public abstract class Pessoa {
-    String nome;
-    String endereco;
-    String telefone;
-    String CPF;
+    protected String nome;
+    protected String endereco;
+    protected String telefone;
+    protected String CPF;
     
     public String getNome() {
         return nome;

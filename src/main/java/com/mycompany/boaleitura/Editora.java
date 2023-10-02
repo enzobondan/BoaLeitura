@@ -9,10 +9,10 @@ package com.mycompany.boaleitura;
  * @author asafe
  */
 public class Editora {
-    int id;
-    String nome;
-    String endereco;
-    String telefone;
+    private int id;
+    public String nome;
+    public String endereco;
+    public String telefone;
     
     public Editora(int id, String nome, String endereco, String telefone) {
         this.id = id;
@@ -23,13 +23,8 @@ public class Editora {
     public int getId() {
         return id;
     }
-    public String getNome() {
-        return nome;
-    }
-    public String getEndereco() {
-        return endereco;
-    }
-    public String getTelefone() {
-        return telefone;
+    
+    public void setId(int id) {
+        this.id = id;
     }
 }

@@ -1,13 +1,13 @@
 package com.mycompany.boaleitura;
 public class Livro {
 
-    String title;
-    int id;
-    String autor;
-    String editora;
-    int qntd;
-    Boolean Alugado;
-    Object clienteDevedor;
+    public String title;
+    private int id;
+    public String autor;
+    public String editora;
+    private int qntd;
+    protected Boolean Alugado;
+    protected Object clienteDevedor;
 
     public Livro(String title, int id, String autor, String editora, int qntd) {
         this.id = id;

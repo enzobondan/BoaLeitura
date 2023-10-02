@@ -9,9 +9,9 @@ package com.mycompany.boaleitura;
  * @author asafe
  */
 public class Funcionario extends Pessoa {
-    int id;
-    String funcao;
-    String dataContratacao;
+    private int id;
+    private String funcao;
+    public String dataContratacao;
     
     public Funcionario(String nome, String CPF, int id, String endereco, String telefone, String funcao, String dataContratacao) {
         this.nome = nome;
