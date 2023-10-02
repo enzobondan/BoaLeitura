@@ -22,4 +22,13 @@ public class Funcionario extends Pessoa {
         this.funcao = funcao;
         this.dataContratacao = dataContratacao;
     }
+    public int getId() {
+        return id;
+    }
+    public String getFuncao() {
+        return funcao;
+    }
+    public String getDataContratacao() {
+        return dataContratacao;
+    }
 }

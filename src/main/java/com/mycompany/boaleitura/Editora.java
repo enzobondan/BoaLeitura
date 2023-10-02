@@ -8,17 +8,28 @@ package com.mycompany.boaleitura;
  *
  * @author asafe
  */
-public class Cliente extends Pessoa {
-    private int id;
-   
-    public Cliente(String nome, String CPF, int id, String endereco, String telefone) {
-        this.nome = nome;
-        this.CPF = CPF;
+public class Editora {
+    int id;
+    String nome;
+    String endereco;
+    String telefone;
+    
+    public Editora(int id, String nome, String endereco, String telefone) {
         this.id = id;
+        this.nome = nome;
         this.endereco = endereco;
         this.telefone = telefone;
     }
     public int getId() {
         return id;
+    }
+    public String getNome() {
+        return nome;
+    }
+    public String getEndereco() {
+        return endereco;
+    }
+    public String getTelefone() {
+        return telefone;
     }
 }

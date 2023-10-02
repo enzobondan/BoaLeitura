@@ -13,4 +13,25 @@ public abstract class Pessoa {
     String endereco;
     String telefone;
     String CPF;
+    
+    public String getNome() {
+        return nome;
+    }
+    
+    public String getCpf() {
+        return CPF; 
+    }
+    
+    public String getEndereco() {
+        return endereco;
+    }
+    
+    public String getTelefone() {
+        return telefone;
+    }
+    
+    @Override
+    public String toString() {
+        return "Nome: " + nome + "CPF: " + CPF + "Endereço: " + endereco + "Telefone: " + telefone;
+    }
 }

@@ -8,13 +8,13 @@ package com.mycompany.boaleitura;
  *
  * @author asafe
  */
-public class Cliente extends Pessoa {
-    private int id;
-   
-    public Cliente(String nome, String CPF, int id, String endereco, String telefone) {
+public class Autor extends Pessoa{
+    int id;
+    
+    public Autor(int id, String nome, String CPF, String endereco, String telefone) {
+        this.id = id;
         this.nome = nome;
         this.CPF = CPF;
-        this.id = id;
         this.endereco = endereco;
         this.telefone = telefone;
     }
