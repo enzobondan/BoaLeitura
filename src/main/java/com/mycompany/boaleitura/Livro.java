@@ -1,5 +1,8 @@
 package com.mycompany.boaleitura;
-public class Livro {
+
+import java.util.List;
+
+public class Livro implements CarrinhoDeCompras {
 
     public String title;
     private int id;

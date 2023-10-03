@@ -4,11 +4,13 @@
  */
 package com.mycompany.boaleitura;
 
+import java.util.List;
+
 /**
  *
  * @author asafe
  */
-public class Cliente extends Pessoa {
+public class Cliente extends Pessoa implements CarrinhoDeCompras {
     private int id;
    
     public Cliente(String nome, String CPF, int id, String endereco, String telefone) {
