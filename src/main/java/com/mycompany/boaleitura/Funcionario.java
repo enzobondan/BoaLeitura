@@ -25,10 +25,24 @@ public class Funcionario extends Pessoa {
     public int getId() {
         return id;
     }
+    
+    public void setId(int id) {
+        this.id = id;
+    }
+    
     public String getFuncao() {
         return funcao;
     }
+    
+    public void setFuncao(String funcao) {
+        this.funcao = funcao;
+    }
+    
     public String getDataContratacao() {
         return dataContratacao;
+    }
+    
+    public void setDataContratacao(String dataContratacao) {
+        this.dataContratacao = dataContratacao;
     }
 }
