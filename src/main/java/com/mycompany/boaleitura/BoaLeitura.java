@@ -1,12 +1,31 @@
 package com.mycompany.boaleitura;
 import java.util.Scanner;
 import java.util.ArrayList;
+import java.nio.file.*;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
+import java.util.Properties;
+import java.util.List;
+import java.io.FileInputStream;
 
 public class BoaLeitura {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException,FileNotFoundException {
         Scanner scan = new Scanner(System.in);
         System.out.println(":3");
+        Path path_estoque = Paths.get("estoque.txt");
+        try {
+            List<String> linhas = Files.readAllLines(path_estoque);
+        } catch (Exception e) {
+            System.out.println("Sistema não foi capaz de acessar arquivo de estoque");
+            e.printStackTrace();
+        }
+        finally {
+            
+        }
         ArrayList<Livro> estoque = new ArrayList<Livro>();
         ArrayList<Funcionario> funcionarios = new ArrayList<Funcionario>();
         ArrayList<Cliente> clientes = new ArrayList<Cliente>();
@@ -33,7 +52,11 @@ public class BoaLeitura {
               estoque.add(novoLivro);
               Livro livro = estoque.get(0);
               System.out.println("Título do Livro inserido: " + livro.getTitle());
-          break; 
+          break;
+          case "7":
+              System.out.println("teste case 7");
+              Files.writeString(path_estoque, "", StandardOpenOption.TRUNCATE_EXISTING);
+          break;
           default:
             System.out.println("Insira um valor válido");
           break;
