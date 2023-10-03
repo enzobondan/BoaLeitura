@@ -2,17 +2,16 @@ package com.mycompany.boaleitura;
 
 import java.util.List;
 
-public class Livro implements CarrinhoDeCompras {
+public class Livro {
 
     public String title;
     private int id;
     public String autor;
     public String editora;
-    protected Boolean Alugado;
-    protected Object clienteDevedor;
 
     public Livro(String title, int id, String autor, String editora) {
         this.title = title;
+        this.id = id;
         this.autor = autor;
         this.editora = editora;
     }
@@ -46,21 +45,5 @@ public class Livro implements CarrinhoDeCompras {
 
     public void setEditora(String editora) {
         this.editora = editora;
-    }
-
-    public Boolean getAlugado() {
-        return Alugado;
-    }
-
-    public void setAlugado(Boolean Alugado) {
-        this.Alugado = Alugado;
-    }
-
-    public Object getClienteDevedor() {
-        return clienteDevedor;
-    }
-
-    public void setClienteDevedor(Object clienteDevedor) {
-        this.clienteDevedor = clienteDevedor;
     }
 }
