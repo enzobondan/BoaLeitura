@@ -18,16 +18,32 @@ public abstract class Pessoa {
         return nome;
     }
     
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+    
     public String getCpf() {
         return CPF; 
+    }
+    
+    public void setCpf(String CPF) {
+        this.CPF = CPF;
     }
     
     public String getEndereco() {
         return endereco;
     }
     
+    public void setEndereco(String endereco) {
+        this.endereco = endereco;
+    }
+    
     public String getTelefone() {
         return telefone;
+    }
+    
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
     }
     
     @Override
