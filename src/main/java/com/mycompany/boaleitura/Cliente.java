@@ -20,6 +20,12 @@ public class Cliente extends Pessoa {
         this.endereco = endereco;
         this.telefone = telefone;
     }
+    
+    @Override
+    public String getNome() {
+        return "Cliente" + super.getNome() + " - CPF: " + super.getCpf();
+    }
+    
     public int getId() {
         return id;
     }

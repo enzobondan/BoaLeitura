@@ -2,17 +2,18 @@ package com.mycompany.boaleitura;
 
 import java.util.List;
 
-public class Livro {
+public class Livro implements Vendavel {
 
     public String title;
     private int id;
     public String autor;
     public String editora;
+    private double preco;
 
     public Livro(String title, int id, String autor, String editora) {
         this.title = title;
-        this.id = id;
         this.autor = autor;
+        this.id = id;
         this.editora = editora;
     }
     public String getTitle() {
@@ -45,5 +46,20 @@ public class Livro {
 
     public void setEditora(String editora) {
         this.editora = editora;
+    }
+    
+    @Override
+    public double getPreco() {
+        return preco;
+    }
+
+    @Override
+    public String getDescricao() {
+        return "Livro: " + title + " por " + autor;
+    }
+
+    @Override
+    public void setPreco(double preco) {
+        this.preco = preco;
     }
 }

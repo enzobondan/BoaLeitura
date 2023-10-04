@@ -22,6 +22,12 @@ public class Funcionario extends Pessoa {
         this.funcao = funcao;
         this.dataContratacao = dataContratacao;
     }
+    
+    @Override
+    public String getNome() {
+        return "Funcionário" + super.getNome() + " - Função: " + this.getFuncao();
+    }
+    
     public int getId() {
         return id;
     }
